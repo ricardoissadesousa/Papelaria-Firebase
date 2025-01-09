@@ -282,7 +282,7 @@ async function finalizeSale() {
               }
 
               // Atualiza o estoque no Firestore
-              await updateDoc(docRef, { quantity: newQuantity });
+     
           } else {
               alert(`Produto não encontrado no estoque: ${item.productName}`);
               return;
