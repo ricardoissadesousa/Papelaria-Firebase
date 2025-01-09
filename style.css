@@ -5,22 +5,22 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Arial', sans-serif;
-}
-
-/* Corpo da página */
-body {
+  }
+  
+  /* Corpo da página */
+  body {
     font-family: 'Arial', sans-serif;
-    background: url('img/Fundo.jpg') no-repeat center center fixed; /* Substitua 'img/Fundo.jpg' pelo caminho da sua imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
-    color: #333; /* Cor do texto */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove espaçamento interno */
-    height: 100vh; /* Garante que o fundo ocupe 100% da altura da tela */
-}
-
-/* Notificação */
-.notify {
+    background: url('../img/Fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  /* Notificação */
+  .notify {
     width: 100%;
     max-width: 400px;
     margin: 10px auto 20px auto;
@@ -31,14 +31,14 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     display: none;
-}
-
-.notify.error {
+  }
+  
+  .notify.error {
     background: #f44336;
-}
-
-/* Formulário */
-.form {
+  }
+  
+  /* Formulário */
+  .form {
     width: 100%;
     max-width: 400px;
     margin: 20px auto;
@@ -47,16 +47,16 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
-}
-
-.form h2 {
-    margin-bottom: 15px;
+  }
+  
+  .form h2 {
+    margin-bottom: 20px;
     color: #4CAF50;
     font-size: 1.5rem;
-}
-
-.form input,
-.form select {
+  }
+  
+  .form input,
+  .form select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -64,14 +64,14 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-}
-
-.form input:focus,
-.form select:focus {
+  }
+  
+  .form input:focus,
+  .form select:focus {
     border-color: #4CAF50;
-}
-
-.form button {
+  }
+  
+  .form button {
     width: 48%;
     padding: 10px 0;
     margin: 10px 1%;
@@ -82,64 +82,68 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.form button:hover {
+  }
+  
+  .form button:hover {
     background: #45a049;
-}
-
-.form button.hide {
+  }
+  
+  .form button.hide {
     display: none;
-}
-
-/* Tabelas */
-.table {
-    margin: 20px auto;
-    width: 90%;
+  }
+  
+  /* Tabelas */
+  .table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 100%;
     max-width: 1000px;
     background: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
-}
-
-.table h2 {
+  }
+  
+  .table h2 {
     text-align: center;
-    margin-bottom: 15px;
     color: #4CAF50;
-    font-size: 1.4rem;
-}
-
-.table table {
+    margin-top: 15px; /* Espaçamento acima do título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    font-size: 1.5rem; /* Ajusta o tamanho */
+  
+  }
+  
+  .table table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 15px;
     text-align: left;
-}
-
-.table table th,
-.table table td {
+  }
+  
+  .table table th,
+  .table table td {
     padding: 15px;
     border-bottom: 1px solid #ddd;
     text-align: center;
-}
-
-.table table th {
+  }
+  
+  .table table th {
     background: #f4f4f4;
     color: #333;
     font-weight: bold;
-}
-
-.table table td {
+  }
+  
+  .table table td {
     font-size: 0.95rem;
     color: #555;
-}
-
-.table table tr:hover {
+  }
+  
+  .table table tr:hover {
     background: #f9f9f9;
-}
-
-/* Botões de ação */
-.table table td button {
+  }
+  
+  /* Botões de ação */
+  .table table td button {
     padding: 8px 12px;
     border: none;
     outline: none;
@@ -147,37 +151,37 @@ body {
     border-radius: 5px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-}
-
-.del_btn {
+  }
+  
+  .del_btn {
     background: #f44336;
     color: #fff;
-}
-
-.del_btn:hover {
+  }
+  
+  .del_btn:hover {
     background: #d32f2f;
-}
-
-.up_btn {
+  }
+  
+  .up_btn {
     background: #2196F3;
     color: #fff;
-}
-
-.up_btn:hover {
+  }
+  
+  .up_btn:hover {
     background: #1976D2;
-}
-
-.sell_btn {
+  }
+  
+  .sell_btn {
     background: #4CAF50;
     color: #fff;
-}
-
-.sell_btn:hover {
+  }
+  
+  .sell_btn:hover {
     background: #45a049;
-}
-
-/* Carrinho */
-.cart {
+  }
+  
+  /* Carrinho */
+  .cart {
     margin: 20px auto;
     width: 90%;
     max-width: 1000px;
@@ -185,53 +189,53 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
-}
-
-.cart h2 {
+  }
+  
+  .cart h2 {
     text-align: center;
     margin-bottom: 15px;
     color: #4CAF50;
     font-size: 1.4rem;
-}
-
-.cart table {
+  }
+  
+  .cart table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
     margin-bottom: 20px;
-}
-
-.cart table th,
-.cart table td {
+  }
+  
+  .cart table th,
+  .cart table td {
     padding: 15px;
     border-bottom: 1px solid #ddd;
     text-align: center;
-}
-
-.cart table th {
+  }
+  
+  .cart table th {
     background: #f4f4f4;
     color: #333;
     font-weight: bold;
-}
-
-.cart table td {
+  }
+  
+  .cart table td {
     font-size: 0.95rem;
     color: #555;
-}
-
-.cart-total {
+  }
+  
+  .cart-total {
     text-align: right;
     font-size: 1.2rem;
     color: #333;
     font-weight: bold;
     margin-bottom: 15px;
-}
-
-.cart-total span {
+  }
+  
+  .cart-total span {
     color: #4CAF50;
-}
-
-.finalize-btn {
+  }
+  
+  .finalize-btn {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
@@ -242,20 +246,20 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.finalize-btn:hover {
+  }
+  
+  .finalize-btn:hover {
     background: #45a049;
-}
-
-.finalize-btn:disabled {
+  }
+  
+  .finalize-btn:disabled {
     background: #ddd;
     color: #aaa;
     cursor: not-allowed;
-}
-
-/* Pop-Up */
-.popup-overlay {
+  }
+  
+  /* Pop-Up */
+  .popup-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -266,9 +270,9 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-}
-
-.popup {
+  }
+  
+  .popup {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -278,57 +282,57 @@ body {
     text-align: center;
     position: relative;
     animation: popup-show 0.3s ease-out;
-}
-
-.popup h2 {
+  }
+  
+  .popup h2 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
-}
-
-.popup p {
+  }
+  
+  .popup p {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
     line-height: 1.5;
-}
-
-.popup .popup-buttons {
+  }
+  
+  .popup .popup-buttons {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-}
-
-.popup .popup-buttons button {
+  }
+  
+  .popup .popup-buttons button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.popup .popup-buttons .confirm-btn {
+  }
+  
+  .popup .popup-buttons .confirm-btn {
     background: #4CAF50;
     color: #fff;
-}
-
-.popup .popup-buttons .confirm-btn:hover {
+  }
+  
+  .popup .popup-buttons .confirm-btn:hover {
     background: #45a049;
     transform: translateY(-2px);
-}
-
-.popup .popup-buttons .cancel-btn {
+  }
+  
+  .popup .popup-buttons .cancel-btn {
     background: #f44336;
     color: #fff;
-}
-
-.popup .popup-buttons .cancel-btn:hover {
+  }
+  
+  .popup .popup-buttons .cancel-btn:hover {
     background: #d32f2f;
     transform: translateY(-2px);
-}
-
-.popup .close-btn {
+  }
+  
+  .popup .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -338,59 +342,59 @@ body {
     color: #888;
     cursor: pointer;
     transition: color 0.3s ease;
-}
-
-.popup .close-btn:hover {
+  }
+  
+  .popup .close-btn:hover {
     color: #333;
-}
-
-/* Animação do Pop-Up */
-@keyframes popup-show {
+  }
+  
+  /* Animação do Pop-Up */
+  @keyframes popup-show {
     from {
-        transform: scale(0.8);
-        opacity: 0;
+      transform: scale(0.8);
+      opacity: 0;
     }
     to {
-        transform: scale(1);
-        opacity: 1;
+      transform: scale(1);
+      opacity: 1;
     }
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
     .form {
-        width: 90%;
+      width: 90%;
     }
-
+  
     .table,
     .cart {
-        width: 100%;
+      width: 100%;
     }
-
+  
     .table table th,
     .table table td,
     .cart table th,
     .cart table td {
-        font-size: 0.8rem;
-        padding: 10px;
+      font-size: 0.8rem;
+      padding: 10px;
     }
-
+  
     .cart-total {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     .form button {
-        width: 100%;
-        margin: 10px 0;
+      width: 100%;
+      margin: 10px 0;
     }
-}
-#screenSaver {
+  }
+  #screenSaver {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('img/Protetor.jpg') no-repeat center center fixed; /* Substitua 'sua-imagem.jpg' pelo caminho da imagem */
+    background: url('../img/Protetor.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -399,20 +403,19 @@ body {
     text-align: center;
     z-index: 9999;
     cursor: pointer;
-}
-
-#screenSaver h1 {
+  }
+  
+  #screenSaver h1 {
     font-size: 8em; /* Tamanho do texto principal */
     font-weight: bold; /* Negrito */
     color: #fff; /* Cor do texto principal */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra para melhor visibilidade */
     margin: 0; /* Remove espaçamento adicional */
-}
-
-#screenSaver h2 {
+  }
+  
+  #screenSaver h2 {
     font-size: 1.5em; /* Tamanho do subtítulo */
     color: #fff; /* Cor do subtítulo */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para subtítulo */
-    margin-top: 10px; /* Espaçamento acima do subtítulo */
-}
-
+    margin-top: 10px; /* Espaçamento acima do subtítulo */
+  }
